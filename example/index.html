@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script src="../dist/index.js"></script>
+<script>
+var fake = new FakeRandomData();
+var obj = {
+  a: '{{int,0,100}}',
+  b: '{{float,0,100}}',
+  c: '{{boolean}}',
+  d: '{{string,0,10}}',
+  inner: {
+    e: '{{int,0,100}}'
+  }
+}
+
+var createdObj = fake.create( obj );
+console.log( createdObj );
+</script>
+</body>
+</html>
