@@ -61,7 +61,9 @@ class FakeRandomData {
 	}
 }
 
-Namespacer( window, 'FakeRandomData' );
-window.FakeRandomData = FakeRandomData;
+if ( window ) {
+	Namespacer( window, 'FakeRandomData' );
+	window.FakeRandomData = FakeRandomData;
+}
 
 export default FakeRandomData;
