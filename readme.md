@@ -58,7 +58,7 @@ fake.create( sampleObj );
 
 * Generate random boolean
 ```javascript
-'{{boolean}}'
+'{{boolean}}' // true
 ```
 
 * Generate a random string with A-Z and 0-9
