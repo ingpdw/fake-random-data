@@ -20,7 +20,7 @@ yarn add fake-random-data
 import FakeRandomData * 'fake-random-data';
 
 const sampleObj = {
-  a: '{{int,0,100}}', // replace int
+  a: '{{int,0,100}}',
   b: '{{float,0,100}}',
   c: '{{boolean}}',
   d: '{{string,0,10}}',
@@ -63,5 +63,5 @@ fake.create( sampleObj );
 
 * Generate a random string with A-Z and 0-9
 ```javascript
-'{{boolean}}'
+'{{string,0,10}}' // 'aej3l4j3j2'
 ```
