@@ -1,4 +1,5 @@
 const RandomString = ( len = 10 ) => {
+  len = parseInt( len, 10 );
   const range = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
   let count = range.length;
   let result = '';

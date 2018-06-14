@@ -3,11 +3,9 @@ import RandomFloat from './randoms/RandomFloat';
 import RandomInt from './randoms/RandomInt';
 import RandomString from './randoms/RandomString';
 import {fInt, fFloat, fBoolean, fString} from './AllowsType';
-import Namespacer from 'js-namespacer';
 
 class FakeRandomData {
 	constructor() {
-
 	}
 
 	create( obj ) {
@@ -59,11 +57,6 @@ class FakeRandomData {
 
 	  return val;
 	}
-}
-
-if ( window ) {
-	Namespacer( window, 'FakeRandomData' );
-	window.FakeRandomData = FakeRandomData;
 }
 
 export default FakeRandomData;
