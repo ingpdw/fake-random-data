@@ -61,7 +61,7 @@ fake.create( sampleObj );
 '{{boolean}}' // true
 ```
 
-* Generate a random string with A-Z and 0-9
+* Generate a random string with A-Z,a-z and 0-9
 ```javascript
-'{{string,0,10}}' // 'aej3l4j3j2'
+'{{string,10}}' // 'aEj3l4j3j2'
 ```
